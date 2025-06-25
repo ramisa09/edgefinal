@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header class="bg-white ">
+    <div class="nav">
+      <div class="navbar  flex justify-around">
+        <div class="navbar-start">
+          <a ><img src="images./logo-header.png" alt=""></a>
+        </div>
+
+        <div class="navbar-center hidden pr-10 md:flex">
+          <ul class="flex gap-3 px-1">
+            <li class="font-semibold text-lg text-black"><a href="">Product</a></li>
+            <li class="font-semibold text-lg text-black"><a>Services</a></li>
+            <li class="font-semibold text-lg text-black"><a>Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center text-black gap-3 hidden md:flex">
+
+          <i class="text-black text-3xl fa-solid fa-magnifying-glass"></i>
+          <i class="text-black text-3xl fa-solid fa-cart-shopping"></i>
+          <a class="btn btn-success btn-outline">Login</a>
+          <a class="btn btn-success">Register</a>
+        </div>
+
+        <div class="navbar-end text-green-600 text-9xl   md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost text-9xl  lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="font-extrabold h-5 w-5 " fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero mt-5">
+      <div class="hero  min-h-screen">
+        <div class="hero-content text-center">
+          <div class=" ">
+            <h1 class="text-5xl font-bold text-black">Freshness <span class="text-green-700">You Can</span></h1>
+            <h1 class="text-5xl font-bold  text-center text-black"><span class="text-green-700">Count</span> On, Prices You'll Love!</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <img src="/images/hero-vegetables.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-white">
+    <p class="text-green-700 font-bold pl-8 text-2xl">Services</p>
+    <div class="card flex flex-col m-5 gap-4 sm:flex-row">
+     
+      <div class="card bg-orange-100 ">
+        <figure class="p-3 ">
+          <div class="w-[150px] rounded-full flex justify-center items-center  h-[150px]  bg-white">
+            <img class="bg-white rounded-3xl p-2" src="/images/service.png" alt="">
+          </div>
+        </figure>
+        <div class=" items-center text-center">
+          <h2 class=" text-black font-bold">24/7 Services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, incidunt.</p>
+        </div>
+      </div>
+
+      <div class="card bg-orange-100  ">
+        <figure class="p-3 ">
+          <div class="w-[150px] h-[150px] bg-white rounded-full  flex items-center justify-center">
+            <img class="bg-white  rounded-3xl " src="/images/delivery.png" alt="">
+          </div>
+        </figure>
+        <div class="items-center text-center">
+          <h2 class=" text-black font-bold">24/7 Services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, incidunt.</p>
+          
+        </div>
+      </div>
+
+      <div class="card bg-orange-100  ">
+        <figure class="p-3 ">
+          <div class="w-[150px] h-[150px] bg-white rounded-full  flex items-center justify-center">
+            <img class="bg-white  rounded-3xl " src="/images/healthy.png" alt="">
+          </div>
+        </figure>
+        <div class="items-center text-center">
+          <h2 class=" text-black font-bold">24/7 Services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, incidunt.</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Products -->
+     <section class="popular-container bg-orange-100  py-16 max-h-lg">
+      <p class="text-green-700 font-bold pl-5 text-2xl mt-5 pb-5">Popular Products</p>
+      
+      <div class="popular-content gap-2 mx-5  flex flex-col md:flex-row ">
+        <div class="pop-img relative md:w-[40%]  h-96  bg-gradient-to-br from-green-800 to-green-100 rounded-2xl px-5  text-black">
+          <h3 class="text-white font-bold text-3xl pt-2">30% off</h3>
+          <p class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <button class="btn  btn-outline bg-white text-black ">Buy Now</button>
+          <img class=" absolute bottom-0 right-2" src="/images/vegetable-offer.png" alt="">
+        </div>
+
+        <!--popular cards -->
+        <div class="card-container mt-3 grid grid-cols-2 gap-3  items-center md:w-[70%] md:grid-cols-3 md:m-0 ">
+         
+          <div class="card h-full bg-white flex flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full  bg-white flex  flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full bg-white flex flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full bg-white flex flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full bg-white flex flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full bg-white flex flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full bg-white flex flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full bg-white flex flex-row items-center">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          <div class="card h-full bg-white  flex-row items-center hidden md:flex">
+            <img class="bg-orange-100 m-1 rounded-xl" src="/images/onion.png" alt="">
+            <div class="  text-black flex flex-col">
+              <h3 class="">4.5</h3>
+              <p class="font-bold">Onion 1 KG</p>
+              <p>$39.99</p>
+            </div>
+          </div>
+          
+          
+          
+          
+        </div>
+
+      </div>
+     </section>
+
+  </section>
+
+  <!-- Arrival and Offer -->
+  <section class="Offer bg-white py-10">
+    <p class="text-green-700 font-bold pl-8 text-2xl">Arrival and Offers</p>
+    
+    <div class="Offer-img-container md:flex ">
+      <div class="first-img pl-3 bg-green-900 flex h-96 m-5 rounded-2xl  relative md:w-[55%]">
+        <div class="my-auto">
+          <button class="btn  btn-success md:w-auto md:h-auto lg:text-2xl">Cook Exotic Dishes</button>
+          <p class="text-white pt-4 text-xl md:w-auto md:h-auto lg:text-2xl">UP to <span class="font-bold">20% OFF</span></p>
+        </div>
+        <img class="absolute w-36 top-6 lg:h-auto lg:w-auto" src="images/dawat-logo.png" alt="">
+        <img class="absolute  h-60 bottom-10 w-64 right-0 lg:h-auto lg:w-auto" src="/images/dawat-mock-up.png" alt="">
+      </div>
+      
+      <div class="second-img pl-3 bg-slate-900 flex h-96 m-5 rounded-2xl  relative md:h-auto md:w-[45%]">
+        <div class="my-auto w-[55%]">
+          <img class="absolute w-24 h-28 top-4 pb-4 left-4 lg:h-auto lg:w-auto" src="images/india-gate-logo.png" alt="">
+          <button class="btn  btn-success lg:text-2xl">World's No.1 Rice</button>
+          <p class="text-white pt-4 text-xl lg:text-2xl">UP to <span class="font-bold">40% OFF</span></p>
+        </div>
+        
+          <div class="relative w-[45%]">
+            <img class="absolute  h-64 bottom-5 right-3 my-auto lg:h-auto lg:w-auto" src="/images/india-gate-mock-up.png" alt="">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- floating card -->
+
+  
+
+  <!-- footer -->
+   <footer class="relative">
+
+    <section class="-top-72  w-[80%]   absolute  inset-x-0 mx-auto md:-top-20">
+      <div class=" bg-orange-100    rounded-xl  md:flex">
+          <div class="img flex justify-center">
+            <img src="/images/vegetable-busket.png" alt="">
+          </div>
+          <div class="news text-black p-3">
+              <p class="font-bold text-3xl text-green-600 text-center">Get Grocery News!</p>
+              <p class="text-3xl text-center font-semibold ">Exclusive training tips, ticks, product deals and more</p>
+              <input class="bg-white rounded-xl my-3 w-full h-10 p-2" type="text" placeholder="Enter your email....">
+              <div  class="flex  justify-center">
+                <button class="btn btn-success ">Subscribe</button>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <div class="footer-content  bg-green-700 px-4 mt-72 text-white pt-96 pb-20 md:flex md:justify-around md:items-center">
+      <div class="cont-1 w-[40%]">
+        <img src="/images/logo-footer.png" alt="">
+        <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+      </div>
+
+      <div class="cont-2 my-3 w-[35%]">
+        <ul>
+          <li>Product</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="cont-3 w-[25%]">
+        <p>Follow Us</p>
+        <div class="link">
+
+        </div>
+      </div>
+    </div>
+   </footer>
+</body>
+
+</html>
